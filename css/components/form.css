@@ -1,0 +1,7 @@
+.form input {
+  font-size: 1.8rem;
+  padding: 1.5rem 1.8rem;
+  border-radius: .9rem;
+  border: none;
+  width: 100%;
+}

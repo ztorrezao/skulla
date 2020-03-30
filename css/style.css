@@ -1,0 +1,21 @@
+/* base (typograph, utilities, base, animation) */
+@import "base/base.css";
+@import "base/utilities.css";
+@import "base/typography.css";
+@import "base/animation.css";
+
+/* components (btn, nav, etc. )*/
+@import "components/button.css";
+@import "components/card.css";
+@import "components/form.css";
+@import "components/logo.css";
+@import "components/nav.css";
+
+/* layout (header, section, grids, etc.) */
+@import "layouts/grids.css";
+@import "layouts/header.css";
+@import "layouts/hero.css";
+@import "layouts/section.css";
+
+/* pages (home, courses, etc.) */
+@import "pages/home.css";

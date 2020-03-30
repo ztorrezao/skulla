@@ -1,0 +1,8 @@
+.logo {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Consolas;
+  font-size: 4.6rem;
+  line-height: 4.6rem;
+}

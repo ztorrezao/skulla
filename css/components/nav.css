@@ -1,0 +1,21 @@
+.navigation{
+  float: right;
+}
+
+.navigation > ul {
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding: 12px 0;
+}
+
+.navigation ul li:not(:last-child) {
+  margin-right: 18px;
+}
+
+.navigation ul li a{
+  color: #fff;
+  text-transform: uppercase;
+}
