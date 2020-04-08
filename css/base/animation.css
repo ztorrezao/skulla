@@ -1,0 +1,76 @@
+/* simple animations with transitions and tranform */
+.elevate {
+  transition: all .3s ease-in-out 0s;
+}
+
+.elevate:hover,
+.elevate:focus {
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, .18);
+  transform: translateY(-.9rem);
+}
+
+.scale {
+  transition: all .3s ease-in-out 0s;
+}
+
+.scale:hover,
+.scale:focus {
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, .18)!important;
+  transform: scale(1.05);
+}
+
+/* Using animation property */
+.showingup-from-left {
+  animation: showingup-left 3s ease-in-out;
+}
+
+.showingup-from-top {
+  animation: showingup-top 3s ease-in-out;
+}
+
+/* keyframes */
+@keyframes showingup-left {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+
+  66% {
+    opacity: 1;
+    transform: translateX(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes showingup-top {
+
+  0% {
+    opacity: 0;
+    transform: translateY(-6rem);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(3rem);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(-3rem);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

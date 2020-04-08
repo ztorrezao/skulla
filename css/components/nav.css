@@ -18,4 +18,27 @@
 .navigation ul li a{
   color: #fff;
   text-transform: uppercase;
+  
+  position: relative;
+}
+
+.navigation ul li a:not(.btn)::before {
+  content: '';
+  height: .3rem;
+  background-color: #fff;
+  width: 0;
+  
+  position: absolute;
+  top: -.6rem;
+  left: 0;
+
+  /* usando o transition */
+  transition: width .3s ease-in-out 0s;
+  /* transition: propriedade duração forma-da-mudança-da-velocidade demora(delay)  */
+}
+
+.navigation ul li.active a::before,
+.navigation ul li:hover a::before,
+.navigation ul li a:focus::before {
+  width: 100%;
 }
