@@ -1,0 +1,6 @@
+@mixin background-img-setup($bg-color) {
+  background-color: $bg-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

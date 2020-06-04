@@ -1,0 +1,31 @@
+.btn {
+  padding: 15px 18px;
+  border-radius: 9px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+
+  &.btn-line{ //.btn.btn-line
+    border: 1px solid white;
+    color: white;
+    transition: .3s ease-in-out;
+  }
+
+  &.btn-line:hover, .btn.btn-shadow{
+    background-color: white;
+    color: $color-primary;
+  }
+
+  &.btn-shadow {
+    box-shadow: 0 6px 4px rgba(0,0,0, .13);
+    background-color: white;
+    color: $color-primary;
+  }
+}
+
+
+
+
+

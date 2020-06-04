@@ -1,0 +1,51 @@
+/* card-course general style */
+.card-course {
+  border-radius: .9rem;
+  box-shadow: 0 .3rem .3rem rgba(0, 0, 0, .15);
+  overflow: hidden;
+}
+
+/* course-img */
+.card-course > .course-img {
+  @include background-img-setup(#f1f1f1);
+
+  width: 100%;
+  min-height: 28.8rem;
+  position: relative;
+}
+
+.card-course > .course-img > .status-label {
+  display: inline-block;
+
+  position: absolute;
+  top: 3rem;
+  left: 0;
+
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 0 .9rem .9rem 0;
+  padding: .9rem 1.2rem;
+}
+
+.status-label.new {
+  background-color: #3399ff;
+}
+
+/* course-details */
+.card-course > .course-details {
+  padding: 1.8rem;
+}
+
+.card-course > .course-details h3, 
+.card-course > .course-details p:not(:last-child) {
+  margin-bottom: .9rem;
+}
+
+.card-course > .course-details h3 > a {
+  color: #4c4c4c;
+}
+
+.card-course > .course-details p:nth-child(2) > a{
+  font-size: 1.5rem;
+  color: #4c4c4c;
+}

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../../fonts/Lato_Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LatoBold";
+  src: url("../../fonts/Lato_Bold.ttf") format("truetype");
+}
+
+body {
+  font-family: "LatoRegular", sans-serif;
+  font-size: 1.8rem; /* é o mesmo que 18px = 1.8 * 10px; */
+}
+
+h1, h2, h3 {
+  font-family: "LatoBold", sans-serif;
+}
+
+h1 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2.1rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-family: "Lato-Bold", sans-serif;
+}

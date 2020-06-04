@@ -1,0 +1,47 @@
+.navigation{
+  float: right;
+  
+  & > ul { //.navigation > ul
+    list-style: none;
+
+    li { //.navigation ul li
+      display: inline-block;
+      padding: 12px 0;
+
+      &:not(:last-child) {
+        margin-right: 18px;
+      }
+
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        
+        position: relative;
+
+        &:not(.btn)::before {
+          content: '';
+          height: .3rem;
+          background-color: #fff;
+          width: 0;
+          
+          position: absolute;
+          top: -.6rem;
+          left: 0;
+        
+          /* usando o transition */
+          transition: width .3s ease-in-out 0s;
+          /* transition: propriedade duração forma-da-mudança-da-velocidade demora(delay)  */
+        }
+      }
+
+      &.active a::before,
+      &:hover a::before,
+      & a:focus::before {
+        width: 100%;
+      }
+
+    }
+  }
+}
+
+
